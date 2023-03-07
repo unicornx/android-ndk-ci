@@ -619,6 +619,8 @@ android_cpuInitFamily(void)
     g_cpuFamily = ANDROID_CPU_FAMILY_ARM64;
 #elif defined(__x86_64__)
     g_cpuFamily = ANDROID_CPU_FAMILY_X86_64;
+#elif defined(__riscv)
+    g_cpuFamily = ANDROID_CPU_FAMILY_RISCV64;
 #else
     g_cpuFamily = ANDROID_CPU_FAMILY_UNKNOWN;
 #endif
